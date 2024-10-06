@@ -4,9 +4,19 @@ export default defineConfig({
   publicDir: './estaticos',
   compressHTML: true,
   outDir: './publico',
-  site: 'https://enflujo.com',
-  base: '/',
+  srcDir: './fuente',
+  // site: 'https://enflujo.com',
+  // base: '/',
   build: {
     assets: 'estaticos',
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
   },
 });

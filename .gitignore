@@ -1,10 +1,5 @@
-# build output
-dist/
-
-# generated types
+publico/
 .astro/
-
-# dependencies
 node_modules/
 
 # logs
@@ -13,9 +8,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
+#temporales
 .DS_Store
+
+# Ver documentación de Yarn moderno (> v2): https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
