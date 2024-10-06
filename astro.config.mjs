@@ -5,8 +5,8 @@ export default defineConfig({
   compressHTML: true,
   outDir: './publico',
   srcDir: './fuente',
-  // site: 'https://enflujo.com',
-  // base: '/',
+  site: 'https://enflujo.com',
+  base: '/',
   build: {
     assets: 'estaticos',
   },
